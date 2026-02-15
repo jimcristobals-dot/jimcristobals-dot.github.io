@@ -3,62 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <title>Samantha Jimenez Cristobal</title>
+
     <style>
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #111;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-    .container {
-        max-width: 600px;
-    }
+        .main-container {
+            display: flex;
+            min-height: 100vh;
+        }
 
-    h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-    }
+        /* LEFT SIDE */
+        .left {
+            width: 35%;
+            background-color: #1e1e1e;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
 
-    .subtitle {
-        font-size: 20px;
-        color: #aaa;
-        margin-bottom: 30px;
-    }
+        .left img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
 
-    .links a {
-        display: inline-block;
-        margin: 10px;
-        padding: 10px 20px;
-        border: 1px solid #00ffff;
-        border-radius: 5px;
-        color: #00ffff;
-        text-decoration: none;
-        transition: 0.3s;
-    }
+        .left h1 {
+            margin-bottom: 5px;
+        }
 
-    .links a:hover {
-        background-color: #00ffff;
-        color: #111;
-    }
-</style>
+        .role {
+            color: #00bcd4;
+            margin-bottom: 20px;
+        }
+
+        .welcome {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 150px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid #00bcd4;
+            color: #00bcd4;
+            transition: 0.3s;
+        }
+
+        .buttons a:hover {
+            background-color: #00bcd4;
+            color: #1e1e1e;
+        }
+
+        /* RIGHT SIDE */
+        .right {
+            width: 65%;
+            padding: 60px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid #00bcd4;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+    </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Samantha Jimenez Cristobal</h1>
-        <p class="subtitle">Data Analyst | Learner | Problem-solver</p>
+<div class="main-container">
 
-        <div class="links">
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="https://via.placeholder.com/180" alt="Foto Samantha">
+
+        <h1>Samantha Jimenez Cristobal</h1>
+        <p class="role">Data Analyst | Learner | Problem-solver</p>
+
+        <p class="welcome">
+            ¡Hola! Bienvenida(o) a mi portafolio de proyectos.
+        </p>
+
+        <div class="buttons">
             <a href="https://github.com/jimcristobals-dot" target="_blank">GitHub</a>
             <a href="#" target="_blank">LinkedIn</a>
         </div>
     </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <div class="section">
+            <h2>Acerca de mí</h2>
+            <p>
+                Aquí puedes escribir una breve descripción profesional sobre ti,
+                tu enfoque en análisis de datos, tu motivación y tus objetivos.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Excel</li>
+                <li>Power BI</li>
+                <li>Comunicación efectiva</li>
+                <li>Pensamiento analítico</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Proyectos</h2>
+            <p>Próximamente agregaré mis proyectos aquí.</p>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
