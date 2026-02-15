@@ -26,7 +26,7 @@
             text-align: center;
         }
 
-        .left img {
+        .left img.profile-pic {
             width: 180px;
             height: 180px;
             border-radius: 50%;
@@ -82,13 +82,25 @@
             margin-bottom: 20px;
         }
 
-        ul {
-            padding-left: 20px;
+          /* Responsive para celular */
+    @media (max-width: 768px) {
+        .main-container {
+            flex-direction: column;
         }
-
-        li {
-            margin-bottom: 10px;
+        .left, .right {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
         }
+        .right {
+            padding-top: 0;
+        }
+        .left img.profile-pic {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 15px;
+        }
+    }
 
     </style>
 </head>
@@ -99,7 +111,7 @@
 
     <!-- LEFT SIDE -->
     <div class="left">
-        <img src="https://via.placeholder.com/180" alt="Foto Samantha">
+        <img src="5c6dcf4e-c799-433b-aa89-6ec12409a514.jpg" alt="Samantha Jimenez Cristobal" class="profile-pic">
 
         <h1>Samantha Jimenez Cristobal</h1>
         <p class="role">Data Analyst | Learner | Problem-solver</p>
@@ -125,15 +137,10 @@
         </div>
 
         <div class="section">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Excel</li>
-                <li>Power BI</li>
-                <li>Comunicación efectiva</li>
-                <li>Pensamiento analítico</li>
-            </ul>
+    <h2>Habilidades</h2>
+    <p>
+        Python | SQL | Excel | Power BI | Comunicación efectiva | Pensamiento analítico
+    </p>
         </div>
 
         <div class="section">
