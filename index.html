@@ -98,13 +98,29 @@
             border-radius: 6px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
-        .project-img {
+       .project-images {
+           display: flex;
+           gap: 10px;
+           margin-bottom: 10px;
+        }
+
+       .project-images img {
+           width: 50%;           /* dos imágenes ocupan la mitad cada una */
+           max-height: 150px;    /* altura máxima */
+           object-fit: contain;   /* se ve completa, no recortada */
+           border-radius: 5px;
+        }
+
+       /* Responsive: en móvil las imágenes se apilan */
+       @media (max-width: 768px) {
+        .project-images {
+           flex-direction: column;
+       }
+        .project-images img {
             width: 100%;
             max-height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
+       }
+       }
 
         .badges {
             font-size: 14px;
@@ -226,7 +242,10 @@
             <p class="badges">
                 Python | Pandas | Matplotib | NumPy | Seaborn | SciPy
             </p>
-            <img src="https://github.com/jimcristobals-dot/Ice.Videogames-online/blob/main/assets/gamesxyear.jpg" alt="Visualización Proyecto 1" class="project-img">
+            <div class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Ice.Videogames-online/refs/heads/main/assets/gamesxyear.jpg" alt="Visualización Proyecto 1" class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Ice.Videogames-online/refs/heads/main/assets/distribucionvglobales.jpg" alt="Visualización Proyecto 1" class="project-images">
+            </div>
             <a href="https://github.com/jimcristobals-dot/Ice.Videogames-online" target="_blank">Ver en GitHub</a>
         </div>
 
@@ -238,7 +257,10 @@
             <p class="badges">
                 Python | Pandas | Plotly | Streamlit
             </p>
-            <img src="https://github.com/jimcristobals-dot/Analisis-de-Vehiculos-y-App-Web-Interactiva/blob/main/assets/apptest.jpg" alt="Visualización Proyecto 1" class="project-img">
+            <div class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Analisis-de-Vehiculos-y-App-Web-Interactiva/refs/heads/main/assets/apptest.jpg" alt="Visualización Proyecto 2" class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Analisis-de-Vehiculos-y-App-Web-Interactiva/refs/heads/main/assets/kilomprecio.jpg" alt="Visualización Proyecto 2" class="project-images">
+            </div>
             <a href="https://github.com/jimcristobals-dot/Analisis-de-Vehiculos-y-App-Web-Interactiva" target="_blank">Ver en GitHub</a>
         </div>
 
@@ -250,7 +272,10 @@
             <p class="badges">
                  Python | SQL | Pandas | Matplotib | Seaborn | SciPy
             </p>
-            <img src="https://raw.githubusercontent.com/jimcristobals-dot/Zuber-Analisis-de-Demanda-y-Clima/refs/heads/main/assets/top10barrios.jpg" alt="Visualización Proyecto 1" class="project-img">
+            <div class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Zuber-Analisis-de-Demanda-y-Clima/refs/heads/main/assets/top10barrios.jpg" alt="Visualización Proyecto 3" class="project-images">
+                <img src="https://raw.githubusercontent.com/jimcristobals-dot/Zuber-Analisis-de-Demanda-y-Clima/refs/heads/main/assets/distribucionduracion.jpg" alt="Visualización Proyecto 3" class="project-images">
+            </div>
             <a href="https://github.com/jimcristobals-dot/Zuber-Analisis-de-Demanda-y-Clima" target="_blank">Ver en GitHub</a>
         </div>
 
